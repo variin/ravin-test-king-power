@@ -1,13 +1,269 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: "Work Sans", sans-serif;
+  background: #f4f4ef;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.center {
+  text-align: center;
+}
+a {
+  color: #636363;
+  text-decoration: none;
+  transition: all 0.5s ease-in;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Navigation */
+
+.navbar {
+  background: #fff;
+  text-align: center;
+  padding: 1.5rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 5px 15px 0 rgba(46, 61, 73, 0.12);
+}
+
+.navbar h2 {
+  margin: 0;
+  font-weight: 200;
+  font-size: 30px;
+  letter-spacing: 4px;
+  font-family: "Work Sans", sans-serif;
+}
+
+/* Post Styles */
+.post-container {
+  background: #fff;
+  padding: 50px;
+  width: 80%;
+  margin: 40px auto;
+  box-shadow: 0 5px 15px 0 rgba(46, 61, 73, 0.12);
+  font-family: "Work Sans", sans-serif;
+}
+
+.post_heading {
+  text-align: center;
+  font-weight: 400;
+  font-size: 40px;
+  color: #636363;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.form input {
+  height: 30px;
+  border: 1px solid #dbe2e8;
+  font-size: 14px;
+  border-radius: 2px;
+  color: #636363;
+  box-shadow: 0 2px 2px 0 rgba(46, 60, 73, 0.05);
+  outline: none;
+  /* width: 60%; */
+}
+
+.selectbox_form {
+  width: 50%;
+}
+
+.selectbox {
+  border-radius: 2px;
+  border: 1px solid #dbe2e8;
+  color: #636363;
+  box-shadow: 0 2px 2px 0 rgba(46, 60, 73, 0.05);
+  outline: none;
+  height: 30px;
+  width: 50%;
+}
+
+.form_margin {
+  margin-right: 2rem;
+}
+
+.selectbox_nationality {
+  border-radius: 2px;
+  border: 1px solid #dbe2e8;
+  color: #636363;
+  box-shadow: 0 2px 2px 0 rgba(46, 60, 73, 0.05);
+  outline: none;
+  height: 30px;
+  width: 70%;
+}
+
+.input_citizen1 {
+  width: 25px;
+}
+
+.input_citizen2 {
+  width: 60px;
+}
+
+.text_form {
+  height: 30px;
+  width: 100%;
+}
+
+.passport_form {
+  height: 30px;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+.input_name {
+  width: 65%;
+}
+.salary_form {
+  height: 30px;
+  display: flex;
+  width: 100%;
+  margin-top: 1.5rem;
+  align-items: center;
+}
+
+.input_salary {
+  width: 30%;
+  margin-left: 0.2rem;
+  margin-right: 0.2rem;
+}
+
+.gender {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.radio {
+  margin-right: 2rem;
+}
+
+.THB_label {
+  margin-right: 19rem;
+}
+
+.form_group {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.form textarea {
+  width: 80%;
+  max-width: 80%;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  border: 1px solid #dbe2e8;
+  font-size: 14px;
+  border-radius: 2px;
+  color: #636363;
+  font-family: "Work Sans,", sans-serif;
+  box-shadow: 0 2px 2px 0 rgba(46, 60, 73, 0.05);
+  outline: none;
+}
+
+/* All Posts */
+
+.all_post_heading {
+  text-align: center;
+  font-weight: 400;
+  font-size: 40px;
+  color: #636363;
+  word-wrap: break-word;
+}
+
+.post {
+  background: #fff;
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px;
+  margin-bottom: 20px;
+  box-shadow: 10px 10px 12px 0 rgba(46, 60, 73, 0.05);
+}
+
+.form button {
+  background: #02b3e4;
+  padding: 15px 40px;
+  text-align: center;
+  color: #fff;
+  font-family: "Work Sans", sans-serif;
+  border-radius: 4px;
+  border: none;
+  font-size: 14px;
+}
+
+.post_title {
+  text-align: center;
+  font-weight: 400;
+  font-size: 40px;
+  color: #636363;
+  word-wrap: break-word;
+}
+
+.post_message {
+  font-size: 25px;
+  font-weight: 200;
+  line-height: 2.5rem;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.control-buttons {
+  display: flex;
+}
+
+.delete {
+  background: #ff7777;
+  border: none;
+  text-align: center;
+  font-size: 14px;
+  padding: 10px 25px;
+  border-radius: 20px;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  width: 50%;
+}
+
+.edit {
+  width: 50%;
+  background: #02b3e4;
+  border: none;
+  text-align: center;
+  font-size: 14px;
+  padding: 10px 25px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-right: 1rem;
+  outline: none;
+  color: #fff;
+}
+
+table,
+td,
+th {
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 15px;
 }
